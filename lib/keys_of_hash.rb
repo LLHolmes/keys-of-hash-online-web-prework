@@ -13,8 +13,11 @@ end
 def keys_of(hash, *arguments)
   array = []
   hash.each do |key, value|
+    puts arguements
+    puts value
     if value == arguments
       array << key
+      puts array
     end
   end
   array
