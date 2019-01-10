@@ -20,5 +20,6 @@ def keys_of(hash, *arguments)
       puts array
     end
   end
+  puts array
   array
 end
