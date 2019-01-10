@@ -11,23 +11,3 @@ class Hash
     array
   end
 end
-
-
-
-=begin
-def keys_of(hash, *arguments)
-  array = []
-  arguments.each do |arg|
-    hash.each do |key, value|
-      puts "#{arg} =?= #{value}"
-      puts "#{key} & #{value}"
-      if value == arg
-        array << key
-        puts array
-      end
-    end
-  end
-  puts array
-  array
-end
-=end
