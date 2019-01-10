@@ -19,6 +19,7 @@ def keys_of(hash, *arguments)
       if value == arg
         array << key
         puts array
+      end
     end
   end
   puts array
