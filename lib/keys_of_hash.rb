@@ -12,13 +12,13 @@ end
 
 def keys_of(hash, *arguments)
   array = []
-  hash.each do |key, value|
-    puts "#{arguments} =?= #{value}"
-    puts "#{key} & #{value}"
-    puts "#{value.class} =?= #{aruguments.class}"
-    if value == arguments
-      array << key
-      puts array
+  arguments.each do |arg|
+    hash.each do |key, value|
+      puts "#{arg} =?= #{value}"
+      puts "#{key} & #{value}"
+      if value == arg
+        array << key
+        puts array
     end
   end
   puts array
