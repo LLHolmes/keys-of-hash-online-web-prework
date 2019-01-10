@@ -15,6 +15,7 @@ def keys_of(hash, *arguments)
   hash.each do |key, value|
     puts arguments
     puts value
+    puts key value
     if value == arguments
       array << key
       puts array
