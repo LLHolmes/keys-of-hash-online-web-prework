@@ -9,3 +9,13 @@ class Hash
     array
   end
 end
+
+def keys_of(hash, *arguments)
+  array = []
+  hash.each do |key, value|
+    if value == arguments
+      array << key
+    end
+  end
+  array
+end
