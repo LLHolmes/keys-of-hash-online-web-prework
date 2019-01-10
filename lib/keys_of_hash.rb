@@ -13,9 +13,9 @@ end
 def keys_of(hash, *arguments)
   array = []
   hash.each do |key, value|
-    puts arguments
-    puts value
-    puts key value
+    puts "#{arguments} =?= #{value}"
+    puts "#{key} & #{value}"
+    puts "#{value.class} =?= #{aruguments.class}"
     if value == arguments
       array << key
       puts array
